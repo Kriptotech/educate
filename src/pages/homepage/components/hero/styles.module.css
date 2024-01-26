@@ -1,0 +1,87 @@
+.container {
+    width: 100%;
+    background: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.1),
+            rgba(0, 0, 0, 0.1)
+        ),
+        url(./assets/hero-bg.png);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container .box {
+    margin: auto;
+    padding-top: 12rem;
+    width: min(1200px, 100%);
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.container .box img {
+    width: 30%;
+    object-fit: contain;
+}
+
+.container .box div {
+    flex: 1;
+}
+
+.container .box h1 {
+    color: var(--title-color);
+    font-size: 3.5rem;
+}
+.container .box h1 span {
+    font-family: "Courgette";
+}
+
+.container .box p {
+    font-size: 1.8rem;
+    color: var(--title-color);
+    margin-top: 30px;
+}
+
+.container .box a {
+    display: inline-block;
+    color: #fff;
+    font-size: 0.9rem;
+    background-color: var(--main-color);
+    padding: 25px 70px;
+    transition: 0.5s;
+    margin-top: 40px;
+    border-radius: 5px;
+}
+.container .box a:hover {
+    background-color: var(--primary-color);
+}
+
+@media (max-width: 1250px) {
+    .container {
+        padding: 0 5%;
+    }
+}
+@media (max-width: 1020px) {
+    .container .box img {
+        display: none;
+    }
+
+    .container .box {
+        text-align: center;
+        padding-bottom: 8rem;
+    }
+}
+@media (max-width: 950px) {
+    .container .box h1 {
+        font-size: 2.5rem;
+    }
+}
+@media (max-width: 500px) {
+    .container .box h1 {
+        font-size: 2rem;
+    }
+    .container .box p {
+        font-size: 1rem;
+    }
+}
